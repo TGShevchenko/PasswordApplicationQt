@@ -1,0 +1,15 @@
+This file describes building and using a test application called PasswordServer. 
+
+            How to build
+1. To build all parts of this test we need to type:
+$./configure ; make
+2. Server application will be located in Server directory, Client - in Client directory.
+3. To discover database libraries which are used in the test we need to set following environment variables: 
+   export PATH=$PATH:~/PasswordServer/Database
+   export LD_LIBRARY_PATH=~/PasswordServer/Database
+   These variables could be set from .profile file (for system) or from .bashrc file (for user).
+   
+           How to use
+1. Run Server application. You can see a port number from console where is the Server has been started from.
+2. Run Client application. You can use "Add", "Update" or "Delete" operations to manipulate users accounts.
+            
